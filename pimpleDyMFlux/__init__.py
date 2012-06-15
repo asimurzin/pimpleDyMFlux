@@ -38,19 +38,19 @@ if FOAM_BRANCH_VERSION( "dev", ">=", "010600" ):
    
    
 #--------------------------------------------------------------------------------------
-if FOAM_REF_VERSION( ">=", "010700" ):
+if FOAM_REF_VERSION( "==", "010700" ) or FOAM_REF_VERSION( "==", "010701" ):
     from pimpleDyMFlux.r1_7_0 import * 
     pass
 
 
 #--------------------------------------------------------------------------------------
-if FOAM_VERSION( ">=", "020000" ):
+if FOAM_VERSION( "==", "020000" ) or FOAM_REF_VERSION( "==", "020001" ):
     from pimpleDyMFlux.r2_0_0 import * 
     pass
 
 
 #--------------------------------------------------------------------------------------
-if FOAM_VERSION( ">=", "020100" ):
+if FOAM_VERSION( "==", "020100" ):
     from pimpleDyMFlux.r2_1_0 import * 
     pass
 
